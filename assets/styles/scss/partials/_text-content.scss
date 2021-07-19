@@ -1,0 +1,35 @@
+.text-content{
+  padding: 30px 0;
+  &.default{
+    background-color: #fff ;
+    color: #161616;
+  }
+  &.blue{
+    background-color: #0082c8 ;
+    color: #fff;
+  }
+
+  &.gray{
+    background: #e7e7e7;
+    color: #161616;
+  }
+
+  &.light-gray{
+    background: #f7f7f7;
+    color: #161616;
+  }
+
+  .text{
+    &.full-width{
+      width: 100%;
+    }
+    &.short-width{
+      width: 75%;
+      margin: 0 auto;
+    }
+    &.boxed{
+      border: 1px solid #161616;
+      padding: 15px;
+    }
+  }
+}

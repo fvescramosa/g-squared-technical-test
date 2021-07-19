@@ -1,0 +1,60 @@
+/*********************
+* Global Stylesheets *
+**********************/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+
+
+//@import "../../third-party/foundation_icons_accessibility/sass/accessibility_foundicons";
+//@import "../../third-party/foundation_icons_general/sass/general_foundicons";
+//@import "../../third-party/foundation_icons_general_enclosed/sass/general_enclosed_foundicons";
+//@import "../../third-party/foundation_icons_social/sass/social_foundicons";
+@mixin button {
+
+  &:hover {
+  }
+}
+
+@mixin background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+* {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.main-template{
+  padding: 25px 0 50px;
+  font-size: 13px;
+  line-height: 2;
+}
+
+body{
+  font-family: "Open Sans";
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #767676;
+  font-size: 13px;
+}
+.container{
+  max-width: 1222px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 30px;
+  @include breakpoint(small only){
+    width: 100%;
+  }
+  @include breakpoint(medium only){
+    width: 100%;
+  }
+}
+
+.content{
+  width: 95%;
+}
+
+header{
+  position: relative;
+}

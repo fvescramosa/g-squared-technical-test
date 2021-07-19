@@ -1,0 +1,41 @@
+.desktop-menu{
+  position: absolute;
+  top: 0;
+  z-index: 99999;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background: #00000085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+
+  .top-bar, .top-bar-left{
+    //height: 100%
+  }
+  .main-navigation{
+    height: 100%;
+      li > a{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+      }
+
+    .submenu{
+      display: block;
+      background: #000;
+      border: none;
+      > a {
+        color: #fff;
+        &:hover{
+          background: #fff;
+          color: #000
+        }
+      }
+    }
+  }
+}
