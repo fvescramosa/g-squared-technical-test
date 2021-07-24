@@ -19,7 +19,7 @@
             endwhile;
         ?>
         <?php echo $tag ?>
-            <?php echo (is_null($title)) ? the_title() : $title; ?>
+            <?php echo ($title == '') ? the_title() : $title; ?>
         <?php echo $end_tag; ?>
 
     </div>
