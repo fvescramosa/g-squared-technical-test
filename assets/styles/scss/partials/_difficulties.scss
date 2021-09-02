@@ -126,8 +126,62 @@
       text-align: center;
     }
     img{
-      width: 75%;
+      //width: 100%;
+      //max-width: none;
+      //margin-bottom: 40px;
     }
   }
 
+  & > .container{
+    //padding-top: 45px !important;
+  }
+
+  &-grid{
+
+    max-width: 991px;
+    margin: 0 auto;
+    &-flex {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 0 -1.5rem;
+    }
+
+    &-item{
+      max-width: calc(50% - 3rem);
+      flex: 1 1 calc(50% - 3rem);
+      text-align: center;
+      margin: 25px 1.5rem;
+
+      @include breakpoint(small only){
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      @include breakpoint(medium only){
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      .icon-holder{
+        text-align: center;
+        span{
+          font-size: 60px;
+        }
+      }
+      .difficulties-title{
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+      }
+      .description-holder{
+        text-align: center;
+        margin: 10px 0;
+      }
+      .button-holder{
+        text-decoration: none;
+
+      }
+    }
+  }
 }

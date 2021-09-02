@@ -15,12 +15,23 @@
   background: #0082c8;
   border-radius: 5px;
   color: #fff;
-  &-primary{
+  text-decoration: none !important;
+
+  @include breakpoint(small only){
+    font-size: 8px
+  }
+  @include breakpoint(medium only){
+    font-size: 12px
+  }
+
+
+  &-primary, &-Primary {
     background:  #0082c8;
   }
-  &-light{
+  &-light, &-Light{
     background: #fff;
     color: #0082c8;
+    border:1px solid #161616
   }
 
   &.rounded{

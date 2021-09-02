@@ -41,6 +41,13 @@
         color: #fff;
         position: relative;
         width: 100%;
+        @include breakpoint(small only){
+          font-size: 15px !important;
+        }
+        @include breakpoint(medium only){
+          font-size: 25px !important;
+        }
+
         &::after{
           margin: -5px auto;
           content: '';
@@ -54,7 +61,9 @@
           right: 0;
           animation: slideFromRight 2s;
         }
-      }
+
+
+    }
 
 
   }

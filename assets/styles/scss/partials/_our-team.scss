@@ -1,7 +1,9 @@
 .our-team{
   &:not(#content){
-    padding: 45px 0;
+    padding: 50px 0;
   }
+
+
 
   .page-header{
     .title{
@@ -21,6 +23,7 @@
   }
   .title{
     text-align: center;
+    margin-bottom: 25px;
   }
 
   &-1{
@@ -36,8 +39,8 @@
       border: 1px solid black;
       flex: 1 1 25%;
       @include  breakpoint(small only){
-        flex: 1 1 100%;
-
+        flex: 1 1 100% !important;;
+        max-width: 100% !important;
         img{
           width: 100%;
           height: 450px;
@@ -46,7 +49,8 @@
         }
       }
       @include  breakpoint(medium only){
-        flex: 1 1 100%;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
         img{
           width: 100%;
           height: 750px;
@@ -139,7 +143,7 @@
 
       img{
         width: 100%;
-        height: 465px;
+        height: 350px;
         object-fit: cover;
         object-position: top;
         @include  breakpoint(small only){
@@ -158,4 +162,8 @@
       }
     }
   }
+}
+
+header.our-team{
+  padding: 0;
 }

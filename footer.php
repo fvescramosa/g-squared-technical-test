@@ -18,7 +18,7 @@
                         </div>
                         <div class="semi-footer-container__maps">
                             <div class="maps-container">
-
+                                <?php the_field('maps', 'option'); ?>
                             </div>
                         </div>
                     </div>

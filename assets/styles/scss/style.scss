@@ -31,9 +31,10 @@ CSS file.
 //@include foundation-xy-grid-classes;
 
 //@include foundation-typography;
+
  @include foundation-forms;
  @include foundation-button;
-// @include foundation-accordion;
+ @include foundation-accordion;
 // @include foundation-accordion-menu;
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
@@ -69,4 +70,8 @@ CSS file.
 // Import Daily Press custom style
 @import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+
 @import "partials";

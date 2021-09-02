@@ -1,0 +1,65 @@
+.text-content-column{
+  padding: 30px 0;
+
+  .text-content-flex{
+    display: flex;
+    flex-flow: row wrap;
+    //align-items: center;
+
+    .text-content{
+
+      .text.short{
+        width: 85%;
+        margin: 0 auto;
+      }
+      &:nth-child(1){
+        padding-right: 15px;
+      }
+      &:nth-child(2){
+        padding-left: 15px;
+      }
+
+      @include breakpoint(small only){
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+      }
+      @include breakpoint(medium only){
+
+      }
+    }
+  }
+  .list{
+   /* ul {
+      li {
+        &::marker {
+          font-family: foundation-icons;
+          //color: #fdb01c;
+          content: "\f127";
+          font-family: 'foundation-icons';
+          font-size: 20px;
+        }
+      }
+    }*/
+  }
+
+
+  a.cdlc_btn{
+    width: auto;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+
+    &-light{
+      background: #fff;
+      color: #161616;
+      border: 1px solid #161616;
+    }
+    &-primary{
+      background: #0082c8;
+      color: #fff;
+      border: 1px solid #0082c8;;
+    }
+  }
+}

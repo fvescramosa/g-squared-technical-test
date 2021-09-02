@@ -7,11 +7,14 @@
                 $type = get_sub_field('type');
                 $color = get_sub_field('color');
                 $text_align = get_sub_field('text_align');
+                $padding = get_sub_field('padding');
 
+                $padding =  implode(" ", $padding);
 
                 $tag .= '<';
                 $tag .= $type;
                 $tag .= ' style="color: '.$color.'; text-align: '.$text_align.'"';
+                $tag .= ' class="'.$padding.'" ';
                 $tag .= '>';
 
                 $end_tag = '</'.$type.'>';

@@ -1,0 +1,191 @@
+.grid2{
+  padding-top: 0px !important;
+  &-full-width{
+    width: 100%;
+    display: flex;
+    @include breakpoint(small only){
+     flex-flow: row wrap;
+    }
+    @include breakpoint(medium only){
+      flex-flow: row wrap;
+    }
+  }
+
+  &-item{
+    flex: 1 1 33.333%;
+    max-width: 33.3333%;
+    height: 70vh;
+    @include breakpoint(small only){
+      height: 50vh;
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    @include breakpoint(medium only){
+      height: 50vh;
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    position:relative;
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(24, 24, 24, 0.2);
+      transition: background ease-in-out .3s;
+    }
+    &:hover{
+      .grid2-item--description{
+        height: 100%;
+        .title--container{
+          top: 10%
+        }
+        .description{
+          width: 100%;
+          display: block;
+          position: absolute;
+          top: 25%;
+          padding: 25px;
+
+        }
+      }
+      .grid2-item--bottom{
+        display: flex;
+
+      }
+    }
+  }
+
+  &--item-background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  &-item--header {
+    height: 30px;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    transition: ease-in all .2s;
+    color: #fff;
+
+    &1 {
+      background: #f8982d;
+    }
+
+    &2 {
+      background: #9dab33;
+    }
+
+    &3 {
+      background: #4a7d38;
+    }
+  }
+  &-item--description{
+    height: 50px;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    transition: ease-in all .2s;
+    color: #fff;
+    @include breakpoint(small only){
+      height: 100%;
+    }
+    @include breakpoint(medium only){
+      height: 100%;
+    }
+    &1{
+      background-blend-mode: multiply;
+      background: #f8982dd9
+    }
+    &2{
+      background-blend-mode: multiply;
+      background: #9dab33d4;
+
+    }
+    &3{
+      background-blend-mode: multiply;
+      background: #4a7d38e6;
+
+    }
+
+    .title--container{
+      position: absolute;
+      top: 0%;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(small only){
+        top: 10%;
+      }
+      @include breakpoint(medium only){
+        top: 10%;
+      }
+    }
+    .title{
+      text-align: center;
+      font-size: 18px;
+    }
+    .description{
+      display: none;
+      line-height: 1.5;
+      font-size: 20px;
+      transition: all ease-in .6s;
+      @include breakpoint(small only){
+        display: block;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 25%;
+        padding: 25px;
+      }
+      @include breakpoint(medium only){
+        display: block;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 25%;
+        padding: 25px;
+      }
+    }
+
+
+  }
+  &-item--bottom{
+    display: none;
+    height: 200px;
+    //background: red;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in .5s;
+    a{
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    @include breakpoint(small only){
+      display: flex;
+       height: 200px;
+      .cdlc_btn {
+        font-size: 12px;
+      }
+    }
+    @include breakpoint(medium only){
+      display: flex;
+       height: 100px;
+      .cdlc_btn {
+        font-size: 12px;
+      }
+    }
+
+  }
+}
