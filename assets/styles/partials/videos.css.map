@@ -1,1 +1,0 @@
-{"version":3,"file":"videos.css","sources":["partials/videos.scss"],"sourcesContent":[".videos{\r\n\r\n  &-full-width{\r\n\r\n  }\r\n\r\n  &-content{\r\n    iframe{\r\n      width: 100%;\r\n    }\r\n  }\r\n}"],"names":[],"mappings":"AAMG,AACC,eADO,CACP,MAAM,CAAA;EACJ,KAAK,EAAE,IAAI,GACZ"}
