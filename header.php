@@ -29,8 +29,9 @@
             while(have_rows('script_tags', 'option')): the_row();
       ?>
             <?php
-                //echo json_encode(the_sub_field('page', 'option'));
+//                echo esc_html(the_sub_field('appear_at', 'option')->post_title);
                 //if(the_sub_field('page', 'option') == ''):
+//                    echo '<!---'.the_sub_field('label', 'option').'-->';
                     the_sub_field('scripts', 'option');
                 //endif
                 ?>

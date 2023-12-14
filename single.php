@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-    <div class="page-header" style="background-image: url('http://staging.cognitive.com.sg/wp-content/uploads/2021/07/Speech-training-bubbles_4.jpg')">
+    <div class="page-header" style="background-image: url('')">
         <div class="overlay">
             <div class="container">
                 <div class="page-header-content">

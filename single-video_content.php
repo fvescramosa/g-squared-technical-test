@@ -10,7 +10,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <section class="main-template" style="/*background-image: url('http://cognitive.test/wp-content/uploads/2021/08/bwicks.jpg'); background-repeat: no-repeat; background-size: cover*/">
+    <section class="main-template" style="/*background-image: url('wp-content/uploads/2021/08/bwicks.jpg'); background-repeat: no-repeat; background-size: cover*/">
         <div class="videos">
             <div class="container">
                 <div class="videos-title">

@@ -43,19 +43,21 @@ body{
   font-style: normal;
   color: #767676;
   font-size: 13px;
+  margin: 0 !important;
 }
 .container{
-  max-width: 1222px;
+  max-width: 1366px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
   padding: 0 30px;
-  @include breakpoint(small only){
-    width: 100%;
-  }
-  @include breakpoint(medium only){
-    width: 100%;
-  }
+  //@include breakpoint(small only){
+  //  width: 100%;
+  //}
+  //@include breakpoint(medium only){
+  //  width: 100%;
+  //}
+
 }
 
 .content{
@@ -82,36 +84,7 @@ header{
   }
 }
 
-.col-list{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  li {
-    flex: 1 1 auto;
-    max-width: 50%;
-    padding-left: 15px;
 
-    &::marker {
-      font-family: 'foundation-icons';
-      font-size: 20px;
-      content: "\f127";
-
-    }
-  }
-}
-
-.text-lister{
-  li {
-    padding-left: 15px;
-    &::marker {
-      font-family: 'foundation-icons';
-      font-size: 20px;
-      content: "\f1d3";
-      color: #1779ba;
-    }
-  }
-
-}
 
 p, h1,h2,h3,h4,h5, h6{
 
@@ -125,5 +98,16 @@ p, h1,h2,h3,h4,h5, h6{
 
 
 .padding-top{
-  padding-top: 10px;
+  padding-top: 11px;
+}
+
+body {
+  background-image: url(../images/swish-bg.png);
+   background-size: 161% 71%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+html, body {
+  //height: 100%;
 }

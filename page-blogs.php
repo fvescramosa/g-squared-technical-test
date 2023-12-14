@@ -46,7 +46,7 @@ get_header(); ?>
                 <a href="<?php echo get_permalink(); ?>" class="post-permalink">
                     <div class="post-flex">
                         <div class="post-thumbnail">
-                            <canvas  style="background-image: url('<?php echo ($post_thumbnail_url) ? $post_thumbnail_url : 'http://staging.cognitive.com.sg/wp-content/uploads/2021/01/pexels-amina-filkins-5560081-1024x683.jpg' ?>')"></canvas>
+                            <canvas  style="background-image: url('<?php echo ($post_thumbnail_url) ? $post_thumbnail_url : '' ?>')"></canvas>
                         </div>
                         <div class="post-content">
                             <h3 class="post-content-title"><?php echo the_title(); ?></h3>

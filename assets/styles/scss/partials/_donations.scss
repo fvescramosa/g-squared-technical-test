@@ -1,0 +1,253 @@
+.donations {
+  width: 100%;
+  max-width: 767px;
+  margin-top: 30px; /* Adjust margin top as per your requirement */
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px 60px;
+  min-height: 635px;
+  &-container{
+
+  }
+  .donations-bar {
+    width: 85%;
+    background-color: #ddd;
+    margin: 0 auto;
+    overflow: hidden;
+    .donations-progress {
+      width: 1%;
+      height: 30px;
+      background-color: #04aa6d;
+      //transition: ease-in all 3s;
+    }
+  }
+
+  // Base styles
+  .donation-form {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+
+    max-width: 100%;
+    margin: 30px auto;
+
+    .dn-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+      &.jcontent-center{
+
+        justify-content: center;
+      }
+      .dn-input {
+        margin-bottom: 15px;
+
+        &.dm-medium {
+          width: calc(50% - 10px);
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        button {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+          margin-bottom: 5px;
+          font-size: 16px;
+        }
+
+        /* Styles for radio buttons and labels */
+
+
+
+        .radio-label input[type="radio"] {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          width: 18px;
+          height: 18px;
+          border: 1px solid #999;
+          border-radius: 50%;
+          outline: none;
+          margin-right: 5px;
+          position: relative;
+          top: 4px;
+        }
+
+
+        .radio-label input[type="radio"]:checked::before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #007bff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &.dm-prepend{
+          display: flex;
+          position: relative;
+
+          .input-prepend {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px 0 0 5px;
+            color: #495057;
+            width: 120px;
+          }
+
+
+          input[type="text"] {
+            width: calc(100% - 40px);
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            outline: none;
+            height: 100%;
+          }
+
+          input[type="text"]:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          }
+        }
+
+
+      }
+    }
+    .radio-label {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+      width: 25%;
+    }
+    .dn-submit {
+      text-align: center;
+
+      button {
+        background-color: #5d8c92;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+    .dm-medium.text{
+      width: 80%;
+      font-size: 15px;
+    }
+  }
+
+  &-content{
+    .text-content {
+      width: 70%;
+      margin: 0 auto;
+
+      .donations-current{
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 20px;
+        h3{
+          font-size: 35px;
+        }
+
+        p{
+          font-size: 22px;
+        }
+
+
+      }
+      &-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px auto 0px;
+
+        &.j-center{
+          justify-content:center;
+        }
+        &.j-right{
+          justify-content: right;
+        }
+      }
+      &-input {
+        margin-bottom: 15px;
+        font-size: 22px;
+        &-medium {
+          width: calc(75% - 10px);
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        button {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+          margin-bottom: 5px;
+          font-size: 16px;
+        }
+
+        &-prepend{
+          display: flex;
+          position: relative;
+
+          .input-prepend {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px 0 0 5px;
+            color: #495057;
+            width: auto;
+
+          }
+
+
+          input[type="text"] {
+            width: calc(100% - 40px);
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            outline: none;
+            height: 100%;
+          }
+
+          input[type="text"]:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          }
+        }
+
+
+      }
+
+
+    }
+  }
+}
